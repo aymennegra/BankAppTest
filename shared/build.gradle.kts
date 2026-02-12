@@ -82,6 +82,12 @@ kotlin {
             dependencies {
                 implementation(libs.junit)
                 implementation(libs.mockk)
+                implementation(libs.mockk.android)
+                implementation(libs.kotlinx.coroutines.test)
+                implementation(libs.turbine)
+                implementation(libs.kotest.assertions)
+                implementation(libs.koin.test)
+                implementation(libs.koin.test.junit4)
             }
         }
     }
