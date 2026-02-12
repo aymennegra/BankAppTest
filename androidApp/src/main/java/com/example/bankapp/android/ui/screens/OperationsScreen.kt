@@ -16,18 +16,19 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.bankapp.android.ui.viewmodels.operations.OperationsUiState
-import com.example.bankapp.android.ui.viewmodels.operations.OperationsViewModel
+import com.example.bankapp.presentation.viewmodels.operations.OperationsUiState
+import com.example.bankapp.presentation.viewmodels.operations.OperationsViewModel
 import com.example.bankapp.domain.model.Operation
-import org.koin.androidx.compose.koinViewModel
 import java.text.SimpleDateFormat
 import java.util.*
+import org.koin.androidx.compose.get
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun OperationsScreen(
     accountId: String,
-    viewModel: OperationsViewModel = koinViewModel(),
+    viewModel: OperationsViewModel = get(),
     onBackClick: () -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()

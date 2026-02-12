@@ -22,16 +22,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.bankapp.android.ui.viewmodels.accounts.AccountsUiState
-import com.example.bankapp.android.ui.viewmodels.accounts.AccountsViewModel
+import com.example.bankapp.presentation.viewmodels.accounts.AccountsUiState
+import com.example.bankapp.presentation.viewmodels.accounts.AccountsViewModel
 import com.example.bankapp.domain.model.Bank
 import com.example.bankapp.domain.model.BankAccount
-import org.koin.androidx.compose.koinViewModel
+import org.koin.androidx.compose.get
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AccountsScreen(
-    viewModel: AccountsViewModel = koinViewModel(),
+    viewModel: AccountsViewModel = get(),
     onAccountClick: (BankAccount) -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()

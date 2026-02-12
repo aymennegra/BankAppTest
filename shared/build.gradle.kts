@@ -50,10 +50,8 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
-                implementation(libs.androidx.lifecycle.viewmodel.ktx)
                 implementation(libs.ktor.client.okhttp)
                 implementation(libs.koin.android)
-                implementation(libs.koin.androidx.compose)
             }
         }
 
