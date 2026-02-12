@@ -1,4 +1,3 @@
-// commonMain
 package com.example.bankapp.presentation.viewmodels.operations
 
 import com.example.bankapp.domain.model.BankAccount
