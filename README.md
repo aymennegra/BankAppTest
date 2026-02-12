@@ -35,14 +35,13 @@ shared/                    # Code partagé KMP
 │   ├── remote/          # API avec Ktor
 │   ├── mapper/          # DTO → Domain
 │   └── repository/      # Implémentation
-└── presentation/        
+└── presentation/        # ViewModels
 
 androidApp/               # Application Android
 ├── ui/
 │   ├── screens/         # Écrans Compose
 │   ├── navigation/      # Navigation
-│   └── theme/		 # Thème Material 3
-|   └── viewmodels/      # ViewModels     
+│   └── theme/           # Thème Material 3
 ├── MainActivity.kt
 └── BankApplication.kt
 ```
