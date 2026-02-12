@@ -86,11 +86,23 @@ Koin                3.5.3
 
 ### Prérequis
 ```
-✅ Android Studio Hedgehog+
+✅ Android Studio 
 ✅ JDK 17
 ✅ Kotlin 1.9.20+
 
+Tests
 
+JUnit 4
+MockK
+Turbine (Flow testing)
+Kotest (Assertions)
+Coroutines Test
+
+Fichiers de test
+
+BankMapperTest.kt (10 tests)
+GetBanksUseCaseTest.kt (3 tests)
+BankRepositoryImplTest.kt (4 tests)
 
 ## 📋 Règles Métier Implémentées
 
