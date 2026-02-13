@@ -74,7 +74,6 @@ Koin                3.5.3
 - Jetpack Compose
 - Material Design 3
 - Navigation Compose
-- Lifecycle ViewModel
 - Koin Android
 
 
